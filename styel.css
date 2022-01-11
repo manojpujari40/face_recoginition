@@ -1,0 +1,14 @@
+body{
+    background-color:pink;
+}
+h3{
+    color:white;
+}
+.heading{
+    width:50%;
+}
+#camera{
+    border: 2px dashed black;
+    width:350px;
+    height:350px;
+}

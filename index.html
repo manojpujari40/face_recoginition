@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Face Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="styel.css">
+    </head>
+    <body>
+        <center>
+        <h1 style="color:white;">FACE RECOGNITON WEB APP</h1>
+        <h3 style="color:white;">Model is trained to identify following object: </h3>
+        <br><br>
+        <h3 class="btn btn-info heading">Father</h3>
+        <br>
+        <h3 class="btn btn-info heading">Mother</h3>
+        <br><br>
+        <h3 class="btn btn-info heading">Me</h3>
+        <h3>Webcam view-</h3>
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>
+        <br><br>
+        <button class="btn btn-info" onclick="take_snapshot()">Capture</button>
+        <br><br>
+        <button class="btn btn-success" onclick="check()">Identify Image</button>
+        <br>
+        <h3>Family member name: <span id="family_member_name"></span></h3>
+        <br>
+        <h3>Accuracy:  <span id="accuracy"></span></h3>
+        </center>
+        <script src="main.js"></script>
+    </body>
+</html>
